@@ -2,7 +2,7 @@ FROM centos:latest
 
 RUN yum -y install httpd perl
 
-EXPOSE 80
+EXPOSE 80 80
 
 # Simple startup script to avoid some issues observed with container restart 
 ADD run-httpd.sh /run-httpd.sh
